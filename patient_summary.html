@@ -667,8 +667,8 @@ const bloodRaw=[
  {ts:1778889600000,PLT:41,WBC:4.75,Hb:110,ret:0.4,retAbs:13.7,note:'出院日（5/14输血小板后）'},
  {ts:1778976000000,PLT:54,WBC:4.23,Hb:116,ret:null,retAbs:null,note:'出院后第1日'},
  {ts:1779062400000,PLT:64,WBC:5.19,Hb:116,ret:null,retAbs:null,note:'新增干咳Grade 1；口腔溃疡Grade 1'},
- {ts:1779379200000,PLT:90,WBC:4.33,Hb:118,ret:null,retAbs:null,note:'5/22门诊；PLT 90（仍<100，回升中）；中性粒%60.3/淋巴%28.6正常'},
- {ts:1779638400000,PLT:119,WBC:4.32,Hb:118,ret:null,retAbs:null,note:'✅ PLT 119，首次≥100！SKB264重启讨论触发；中性粒%62.0/淋巴%26.9正常'},
+ {ts:1779379200000,PLT:90,WBC:4.33,Hb:118,ret:null,retAbs:null,note:'5/22门诊；PLT 90（仍<100，回升中）；中性粒%60.3（绝对2.61）/淋巴%28.6（绝对1.24）/单核绝对0.33；MPV 11.4，大血小板比率34.6%'},
+ {ts:1779638400000,PLT:119,WBC:4.32,Hb:118,ret:null,retAbs:null,note:'✅ PLT 119，首次≥100！SKB264重启讨论触发；中性粒%62.0（绝对2.68）/淋巴%26.9（绝对1.16）/单核绝对0.32；MPV 10.8，大血小板比率31.8%'},
 ];
 
 const organRaw=[
@@ -698,7 +698,7 @@ const organRaw=[
  {ts:1775491200000,ALP:154,AST:36,ALT:25,gGT:73,TBA:70.6,TBil:18.1,DBil:7.3,eGFR:68,D2:null,TSH:null,note:'TBA峰值70.6；AST 36↑'},
  {ts:1778198400000,ALP:170,AST:33,ALT:23,gGT:59,TBA:46,TBil:21.5,DBil:8.4,eGFR:81,D2:1.6,TSH:null,note:'SKB264 C1用药前基线（采血2026-05-07）'},
  {ts:1778544000000,ALP:139,AST:25,ALT:20,gGT:49,TBA:31.9,TBil:24.1,DBil:9.8,eGFR:92,D2:1.36,TSH:5.0,note:'住院检查（5/11）；TSH 5.0↑（较3/13峰值10.2显著改善）；FT3/FT4正常；B细胞极度耗竭（CD19绝对24↓↓）'},
- {ts:1779379200000,ALP:172,AST:40,ALT:25,gGT:37.8,TBA:null,TBil:20.2,DBil:7.5,eGFR:null,D2:1.21,TSH:null,note:'5/22门诊；AST 40↑（轻度）；ALP 172↑（较5/11 139反弹，SKB264后需关注）；γ-GT 37.8（改善）；TBil 20.2（改善）；血沉3.2正常'},
+ {ts:1779379200000,ALP:172,AST:25,ALT:25,gGT:60,TBA:37.8,TBil:20.2,DBil:7.5,eGFR:69,D2:1.21,TSH:null,note:'5/22门诊；ALP 172↑（较5/11 139反弹，需关注）；γ-GT 60↑（较5/11 49↑，反弹）；TBA 37.8↑；ALT/AST正常（25/25）；TBil 20.2；eGFR 69；LDH 170；前白蛋白147↓；BUN 3.2；Creatinine 80；UA 289；D-二聚体1.21↑'},
 ];
 
 const tumorRaw=[
@@ -730,7 +730,7 @@ const tumorRaw=[
  {ts:1776268800000,CA125:42.2,HE4:93.9,CA199:null,CA724:null,note:'CA125升至42.2'},
  {ts:1778198400000,CA125:34.4,HE4:84.2,CA199:20.8,CA724:1.2,note:'SKB264 C1前基线'},
  {ts:1778544000000,CA125:36.3,HE4:null,CA199:19.5,CA724:null,note:'住院检查（5/11）'},
- {ts:1779379200000,CA125:29.7,HE4:87.9,CA199:20.2,CA724:null,note:'5/22门诊；CA125↓下降至29.7（接近正常）；趋势：42.2→36.3→29.7'},
+ {ts:1779379200000,CA125:29.7,HE4:87.9,CA199:20.2,CA724:1.5,note:'5/22门诊；CA125↓下降至29.7（接近正常）；趋势：42.2→36.3→29.7；HE4 87.9（正常范围）；CA199/CA724正常'},
 ];
 
 // Treatment events for chart annotations

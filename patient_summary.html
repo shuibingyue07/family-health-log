@@ -168,11 +168,11 @@ document.getElementById('pw-input').addEventListener('keydown',e=>{if(e.key==='E
   <div class="grid2">
     <div>
       <div class="card">
-        <div class="card-title">当前状态（2026-06-01）</div>
+        <div class="card-title">当前状态（2026-06-04）</div>
         <div class="grid3" style="margin-bottom:14px">
-          <div class="mbox alert"><div class="mn">PLT</div><div class="mv">74</div><div class="mu">×10⁹/L</div><div class="mnote">↓↓ C2后下降中（D+6），谷值未到</div></div>
-          <div class="mbox warn"><div class="mn">WBC</div><div class="mv">3.36</div><div class="mu">×10⁹/L</div><div class="mnote">↓偏低（6/1）</div></div>
-          <div class="mbox warn"><div class="mn">Hb</div><div class="mv">110</div><div class="mu">g/L</div><div class="mnote">↓轻度贫血，较前下降</div></div>
+          <div class="mbox alert"><div class="mn">PLT</div><div class="mv">71</div><div class="mu">×10⁹/L</div><div class="mnote">↓趋稳（D+9，较D+6仅降3）；6/8复查</div></div>
+          <div class="mbox warn"><div class="mn">WBC</div><div class="mv">3.71</div><div class="mu">×10⁹/L</div><div class="mnote">↑较6/1回升（6/4）</div></div>
+          <div class="mbox warn"><div class="mn">Hb</div><div class="mv">111</div><div class="mu">g/L</div><div class="mnote">↓轻度贫血，基本稳定</div></div>
         </div>
         <div class="grid3" style="margin-bottom:14px">
           <div class="mbox warn"><div class="mn">CA125</div><div class="mv">29.7</div><div class="mu">U/mL</div><div class="mnote">↑偏高但下降中（5/22）</div></div>
@@ -200,7 +200,7 @@ document.getElementById('pw-input').addEventListener('keydown',e=>{if(e.key==='E
       <div class="card">
         <div class="card-title">待处理事项</div>
         <div class="action-item"><div class="ai-icon">✅</div><div><div class="ai-title">SKB264 C2已于5/26用药（4mg/kg）</div><div class="ai-sub">支持用药：曲拉西利·阿扎司琼·氨磷汀·甘草酸苷；C2当晚寒战+发热38.3°C+呕吐（2-3h自退，血压血氧正常），考虑氨磷汀副反应或SKB264 IRR</div></div></div>
-        <div class="action-item"><div class="ai-icon">🔴</div><div><div class="ai-title">⚡ 6/4复查血常规（张蓉医生）</div><div class="ai-sub">PLT：119→111(D+2)→74(D+6)，谷值未到；已用罗普司亭(5/28)+阿伐曲泊帕(6/1起)；C1谷值18，密切监测</div></div></div>
+        <div class="action-item"><div class="ai-icon">🔴</div><div><div class="ai-title">⚡ 6/8复查血常规 → C3 go/no-go</div><div class="ai-sub">6/4 PLT=71（趋稳）；张蓉医生：暂不打罗普司亭，续阿伐曲2粒/日；PLT≥80方可6/9 C3；若不达标C3推迟</div></div></div>
         <div class="action-item"><div class="ai-icon">🔴</div><div><div class="ai-title">C3前告知陆医生：C2后发热反应</div><div class="ai-sub">C2当晚寒战+38.3°C+呕吐（2-3h自退）；确认预处理方案（地塞米松/苯海拉明）或停用氨磷汀</div></div></div>
         <div class="action-item"><div class="ai-icon">🔴</div><div><div class="ai-title">⚡ 安排甲状腺TI-RADS 4a FNA穿刺</div><div class="ai-sub">4/10超声提示右叶结节，已推迟，PLT已达标，应尽快约</div></div></div>
         <div class="action-item"><div class="ai-icon">🟡</div><div><div class="ai-title">干咳监测+胸部CT（6月中旬）</div><div class="ai-sub">5/18起Grade 1干咳；C2后与4/20 GGO对比，排查ILD进展</div></div></div>
@@ -672,7 +672,8 @@ const bloodRaw=[
  {ts:1779379200000,PLT:90,WBC:4.33,Hb:118,ret:null,retAbs:null,note:'5/22门诊；PLT 90（仍<100，回升中）；中性粒%60.3（绝对2.61）/淋巴%28.6（绝对1.24）/单核绝对0.33；MPV 11.4，大血小板比率34.6%'},
  {ts:1779638400000,PLT:119,WBC:4.32,Hb:118,ret:null,retAbs:null,note:'✅ PLT 119，首次≥100！SKB264重启讨论触发；中性粒%62.0（绝对2.68）/淋巴%26.9（绝对1.16）/单核绝对0.32；MPV 10.8，大血小板比率31.8%'},
  {ts:1779897600000,PLT:111,WBC:3.05,Hb:113,ret:null,retAbs:null,note:'SKB264 C2 D+2（5/28）；PLT开始下降；当天注射罗普司亭；中性粒%67.5（绝对2.06）/淋巴%19.7↓（绝对0.60↓）/单核绝对0.28'},
- {ts:1780243200000,PLT:74,WBC:3.36,Hb:110,ret:null,retAbs:null,note:'SKB264 C2 D+6（6/1）；PLT持续下降，谷值未到；张蓉医生嘱服阿伐曲泊帕；中性粒%71.1（绝对2.39）/淋巴%23.2（绝对0.78↓）/单核绝对0.12；6/4复查'},
+ {ts:1780243200000,PLT:74,WBC:3.36,Hb:110,ret:null,retAbs:null,note:'SKB264 C2 D+6（6/1）；PLT持续下降；张蓉医生嘱服阿伐曲泊帕；中性粒%71.1（绝对2.39）/淋巴%23.2（绝对0.78↓）/单核绝对0.12'},
+ {ts:1780502400000,PLT:71,WBC:3.71,Hb:111,ret:null,retAbs:null,note:'SKB264 C2 D+9（6/4）；PLT趋稳（较6/1仅降3）；WBC 3.71回升；淋巴绝对1.16恢复；中性粒绝对2.14；已镜检；暂不打罗普司亭，续阿伐曲；6/8复查判断C3 go/no-go'},
 ];
 
 const organRaw=[

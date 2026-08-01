@@ -86,6 +86,23 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;backgr
 .se-grade-4{background:#fde8e8}
 /* scroll wrapper */
 .tbl-scroll{overflow-x:auto}
+@media (max-width:700px){
+  body{overflow-x:hidden}
+  .page-header{padding:16px 20px;align-items:flex-start;gap:14px}
+  .page-header h1{font-size:19px}
+  .page-header .meta{flex-shrink:0}
+  .diag-bar{padding:12px 20px;gap:14px 22px}
+  .dsep{display:none}
+  .di{min-width:calc(50% - 12px)}
+  .tabs{width:100%;max-width:100vw;overflow-x:auto;padding:0 10px;-webkit-overflow-scrolling:touch}
+  .tab-btn{padding:11px 14px}
+  .tab-panel{padding:14px 12px}
+  .grid2{grid-template-columns:minmax(0,1fr);gap:0}
+  .grid3{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+  .card{padding:16px 14px;border-radius:8px}
+  .mbox{padding:10px 8px;min-width:0}
+  .mnote{overflow-wrap:anywhere}
+}
 </style>
 </head>
 <body>
@@ -98,7 +115,7 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;backgr
   </div>
   <div class="meta">
     <div>主诊医生：吴小华</div>
-    <div>数据截至：2026年7月6日</div>
+    <div>数据截至：2026年7月31日</div>
   </div>
 </div>
 
@@ -113,7 +130,7 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;backgr
   <div class="dsep"></div>
   <div class="di"><span class="dl">ECOG</span><span class="dv">0–1</span></div>
   <div class="dsep"></div>
-  <div class="di"><span class="dl">当前线数</span><span class="dv red">三线（暂停中）</span></div>
+  <div class="di"><span class="dl">当前线数</span><span class="dv red">三线（治疗中）</span></div>
 </div>
 
 <nav class="tabs">
@@ -131,11 +148,11 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;backgr
   <div class="grid2">
     <div>
       <div class="card">
-        <div class="card-title">当前状态（2026-07-06）</div>
+        <div class="card-title">当前状态（2026-07-31）</div>
         <div class="grid3" style="margin-bottom:14px">
-          <div class="mbox alert"><div class="mn">PLT</div><div class="mv">76</div><div class="mu">×10⁹/L</div><div class="mnote">7/2为156，7/6降至76；C4是否执行待确认</div></div>
-          <div class="mbox alert"><div class="mn">WBC</div><div class="mv">2.89</div><div class="mu">×10⁹/L</div><div class="mnote">↓ANC 1.86，淋巴绝对值0.75↓（7/6）</div></div>
-          <div class="mbox warn"><div class="mn">Hb</div><div class="mv">108</div><div class="mu">g/L</div><div class="mnote">↓轻度贫血，近阶段约106-109</div></div>
+          <div class="mbox alert"><div class="mn">PLT</div><div class="mv">85</div><div class="mu">×10⁹/L</div><div class="mnote">111→95→85（7/27，家属提供）；C5已于7/31执行</div></div>
+          <div class="mbox ok"><div class="mn">WBC</div><div class="mv">4.97</div><div class="mu">×10⁹/L</div><div class="mnote">ANC 3.49正常，淋巴绝对值1.05↓（7/23）</div></div>
+          <div class="mbox warn"><div class="mn">Hb</div><div class="mv">117</div><div class="mu">g/L</div><div class="mnote">接近正常下限（7/23）</div></div>
         </div>
         <div class="grid3" style="margin-bottom:14px">
           <div class="mbox alert"><div class="mn">CA125</div><div class="mv">49.5</div><div class="mu">U/mL</div><div class="mnote">29.0→44.5→49.5；影像7/1未见明确进展</div></div>
@@ -152,9 +169,9 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;backgr
         <div class="card-title">当前用药</div>
         <table class="data-table">
           <tr><th>药物</th><th>用途</th><th>状态</th></tr>
-          <tr><td>阿伐曲泊帕</td><td>促血小板（TPO-RA）</td><td><span class="badge b-grn">2粒/日</span></td></tr>
-          <tr><td>罗普斯亭</td><td>促血小板（TPO-RA）</td><td><span class="badge b-grn">按计划注射</span></td></tr>
-          <tr><td>SKB264（芦康沙妥珠单抗）</td><td>Trop-2 ADC 三线</td><td><span class="badge b-org">C3已完成；C4待确认</span></td></tr>
+          <tr><td>阿伐曲泊帕</td><td>促血小板（TPO-RA）</td><td><span class="badge b-grn">按血象及医嘱调整</span></td></tr>
+          <tr><td>罗普司亭</td><td>促血小板（TPO-RA）</td><td><span class="badge b-grn">按血象及医嘱注射</span></td></tr>
+          <tr><td>SKB264（芦康沙妥珠单抗）</td><td>Trop-2 ADC 三线</td><td><span class="badge b-org">C5已完成；当前3 mg/kg</span></td></tr>
           <tr><td>贝伐珠单抗</td><td>抗血管生成</td><td><span class="badge b-gray">⏸ 暂停</span></td></tr>
         </table>
       </div>
@@ -162,16 +179,16 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;backgr
     <div>
       <div class="card">
         <div class="card-title">待处理事项</div>
-        <div class="action-item"><div class="ai-icon">🔴</div><div><div class="ai-title">7/10 外部专家咨询</div><div class="ai-sub">拟咨询：影像稳定但CA125继续升高时，是否继续芦康、调整间隔/剂量或换线。</div></div></div>
-        <div class="action-item"><div class="ai-icon">🔴</div><div><div class="ai-title">C4 是否执行待确认</div><div class="ai-sub">6/29因CA125反弹先暂停；7/1韩主任与放射科沟通认为影像学无明显进展；7/6 PLT 76、WBC 2.89，需重新确认用药条件。</div></div></div>
-        <div class="action-item"><div class="ai-icon">🟡</div><div><div class="ai-title">血小板/白细胞支持方案</div><div class="ai-sub">C3后PLT 130→92→81→133→156→76；若继续芦康，需要同步确认罗普司亭、阿伐曲泊帕和升白支持节奏。</div></div></div>
+        <div class="action-item"><div class="ai-icon">🔴</div><div><div class="ai-title">C5后血象监测</div><div class="ai-sub">7/31已按3 mg/kg完成C5；结合既往低谷，按计划复查血常规并确认罗普司亭、阿伐曲泊帕支持节奏。</div></div></div>
+        <div class="action-item"><div class="ai-icon">🟡</div><div><div class="ai-title">肿瘤标志物与疗效复查</div><div class="ai-sub">7/6 CA125为49.5，7/1影像无明确进展；需结合后续肿标和影像决定是否继续当前减量方案。</div></div></div>
+        <div class="action-item"><div class="ai-icon">🟡</div><div><div class="ai-title">血小板支持方案</div><div class="ai-sub">7/9-7/27 PLT 40→83→90→111→95→85；继续按医生指令调整促血小板治疗和复查频率。</div></div></div>
         <div class="action-item"><div class="ai-icon">🔬</div><div><div class="ai-title">后线靶点补充检测</div><div class="ai-sub">可讨论B7-H4、HER3、CDH6、CLDN6、B7-H3等IHC/RNA检测，以备后续ADC或临床试验选择。</div></div></div>
         <div class="action-item"><div class="ai-icon">🫁</div><div><div class="ai-title">肺部GGO随访</div><div class="ai-sub">7/1做的是腹部/盆腔CT；4/20胸部CT右上肺GGO是否需要单独复查胸部CT，待韩医生/会诊医生决定。</div></div></div>
         <div class="action-item"><div class="ai-icon">📅</div><div><div class="ai-title">甲状腺与免疫指标随访</div><div class="ai-sub">TI-RADS 4a结节按医嘱复查；TSH和IgG/IgA/IgM可在后续治疗前评估中补充。</div></div></div>
       </div>
       <div class="card">
         <div class="card-title">当前副作用 / 风险点</div>
-        <div class="action-item"><div class="ai-icon">🩸</div><div><div class="ai-title">骨髓抑制 <span class="badge b-red">重点</span></div><div class="ai-sub">SKB264 C1后PLT谷值18；C3后仍出现PLT和WBC波动，7/6 PLT 76、WBC 2.89。</div></div></div>
+        <div class="action-item"><div class="ai-icon">🩸</div><div><div class="ai-title">骨髓抑制 <span class="badge b-red">重点</span></div><div class="ai-sub">SKB264 C1后PLT谷值18；7/9再次降至40。C4/C5已减至3 mg/kg，仍需密切监测血小板。</div></div></div>
         <div class="action-item"><div class="ai-icon">🫁</div><div><div class="ai-title">肺部磨玻璃影 <span class="badge b-org">待复查</span></div><div class="ai-sub">4/20胸部CT新增右上肺GGO；7/1检查为腹部/盆腔CT，是否补胸部CT仍待医生确认。</div></div></div>
       </div>
     </div>
@@ -191,12 +208,13 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;backgr
           <div class="tl-detail">C6–C12（4.4 mg/kg，减量）：2025-11-11 至 2026-03-19</div>
           <div class="tl-detail" style="color:#c0392b;margin-top:3px">C13（2026-03-24）：DS8201 <strong>永久停药</strong><span class="badge b-red">累积肝毒性+骨髓抑制</span></div>
         </div>
-        <div class="tl-item"><div class="tl-dot org"></div><div class="tl-date">2026/05/08 — 至今 · 三线</div><div class="tl-title">SKB264（芦康沙妥珠单抗，Trop-2 ADC）<span class="badge b-org">C4待确认</span></div>
-          <div class="tl-detail">C1：2026-05-08，4 mg/kg（半剂量起步）</div>
+        <div class="tl-item"><div class="tl-dot org"></div><div class="tl-date">2026/05/08 — 至今 · 三线</div><div class="tl-title">SKB264（芦康沙妥珠单抗，Trop-2 ADC）<span class="badge b-org">已完成C5</span></div>
+          <div class="tl-detail">C1：2026-05-08，输注中止，实际摄入约2 mg/kg</div>
           <div class="tl-detail" style="color:#c0392b">C1后PLT骤降至谷值18（Grade 4）→ 5/11住院，输血小板×2次，5/15出院</div>
           <div class="tl-detail">C2：2026-05-26，4 mg/kg；因血小板恢复后重启</div>
           <div class="tl-detail">C3：2026-06-11，4 mg/kg；原定6/9，因家属希望PLT>100推迟2天</div>
-          <div class="tl-detail" style="color:#c0392b;margin-top:3px">C4：原计划6/29，因CA125反弹及医生建议先影像评估暂停；7/1影像学无明显进展，7/6 PLT 76、CA125 49.5，是否执行待确认</div>
+          <div class="tl-detail">C4：2026-07-15，减量至3 mg/kg</div>
+          <div class="tl-detail">C5：2026-07-31，继续3 mg/kg</div>
         </div>
       </div>
     </div>
@@ -220,10 +238,11 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;backgr
           <tr style="background:#f0f7fb"><td>C12</td><td>2026-03-03</td><td>DS8201+卡度尼利+贝伐</td><td>4.4 / 6 / 7.5</td><td>PLT 102，推迟1周</td></tr>
           <tr style="background:#fde8e8"><td>C13</td><td>2026-03-24</td><td>卡度尼利+贝伐（DS8201停）</td><td>— / 6 / 7.5</td><td>DS8201 <strong>永久停药</strong>（累积肝毒性+骨髓抑制）</td></tr>
           <tr style="background:#fef3e2"><td colspan="5" style="text-align:center;font-weight:700;color:#d35400">卡度尼利 C13起已停用；贝伐珠单抗 2026-05-11住院后暂停</td></tr>
-          <tr style="background:#fde8e8"><td>SKB264 C1</td><td>2026-05-08</td><td>芦康沙妥珠单抗</td><td>4 mg/kg</td><td>PLT基线52，输液后Grade 4骨髓抑制，谷值18</td></tr>
+          <tr style="background:#fde8e8"><td>SKB264 C1</td><td>2026-05-08</td><td>芦康沙妥珠单抗</td><td>实际约2 mg/kg</td><td>原计划4 mg/kg；输注中止，之后PLT谷值18</td></tr>
           <tr style="background:#e8f8ef"><td>SKB264 C2</td><td>2026-05-26</td><td>芦康沙妥珠单抗</td><td>4 mg/kg</td><td>恢复用药；C2后PLT最低约71，后续回升</td></tr>
           <tr style="background:#e8f8ef"><td>SKB264 C3</td><td>2026-06-11</td><td>芦康沙妥珠单抗</td><td>4 mg/kg</td><td>按计划执行；C3后PLT 130→92→81→133→156→76</td></tr>
-          <tr style="background:#fef3e2"><td>SKB264 C4</td><td>原计划2026-06-29</td><td>芦康沙妥珠单抗</td><td>待定</td><td>因CA125反弹和影像评估暂停；7/6 PLT 76、CA125 49.5，是否执行待确认</td></tr>
+          <tr style="background:#e8f8ef"><td>SKB264 C4</td><td>2026-07-15</td><td>芦康沙妥珠单抗</td><td>3 mg/kg</td><td>因血小板毒性由4 mg/kg下调；已执行</td></tr>
+          <tr style="background:#e8f8ef"><td>SKB264 C5</td><td>2026-07-31</td><td>芦康沙妥珠单抗</td><td>3 mg/kg</td><td>继续减量方案；已执行</td></tr>
         </tbody>
       </table>
       </div>
@@ -270,7 +289,7 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;backgr
     </div>
   </div>
   <div class="card">
-    <div class="card-title">血常规完整数据（最新截至2026-07-06）</div>
+    <div class="card-title">血常规完整数据（正式报告截至2026-07-23；7/27 PLT为家属提供）</div>
     <div class="tbl-scroll">
     <table class="data-table" id="bloodTable">
       <thead><tr><th>日期</th><th>PLT</th><th>WBC</th><th>Hb</th><th>网织红%</th><th>备注</th></tr></thead>
@@ -399,9 +418,9 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;backgr
         <tr class="se-grade-1"><td>2025-09-28（C4）</td><td>DS8201 / 贝伐</td><td>双侧小腿肌间静脉血栓（VTE）</td><td>2</td><td>抗凝治疗</td><td>2025-12-28复查通畅，已消退</td></tr>
         <tr class="se-grade-1"><td>2025-11起（持续）</td><td>卡度尼利</td><td>免疫相关甲状腺炎（TSH升高）</td><td>2</td><td>监测甲状腺功能，TSH最高10.2（2026-03）</td><td>停卡度尼利后自行恢复，5/11降至5.0</td></tr>
         <tr class="se-grade-3"><td>2025-11-23（C7后）</td><td>DS8201</td><td>肝功能最差值（ALP 192，γ-GT 98，TBA 46.5）</td><td>2–3</td><td>监测，未加用保肝药（继续用药）</td><td>减量后缓慢下降</td></tr>
-        <tr class="se-grade-4"><td>2026-05-08（SKB264 C1后）</td><td>SKB264</td><td>Grade 4 血小板减少（PLT谷值18）</td><td><strong>4</strong></td><td>5/11住院；输血小板×2次；阿伐曲泊帕+罗普斯亭</td><td>5/25 PLT=119（✅首次≥100）；5/26 C2已重启（+曲拉西利骨髓保护）</td></tr>
+        <tr class="se-grade-4"><td>2026-05-08（SKB264 C1后）</td><td>SKB264</td><td>Grade 4 血小板减少（PLT谷值18）</td><td><strong>4</strong></td><td>5/11住院；输血小板×2次；阿伐曲泊帕+罗普司亭</td><td>5/25 PLT=119（✅首次≥100）；5/26 C2已重启（+曲拉西利骨髓保护）</td></tr>
         <tr class="se-grade-2"><td>2026-05-26晚（C2当晚）</td><td>氨磷汀/SKB264 IRR</td><td>寒战+发热38.3°C+心跳快+呕吐×1（2-3h自退）</td><td>1–2</td><td>观察；C3前告知陆医生，确认预处理方案或是否停氨磷汀</td><td>次日缓解，自限性；待医生确认病因</td></tr>
-        <tr class="se-grade-2"><td>2026-06（C3后）</td><td>SKB264</td><td>血小板/白细胞波动：PLT 130→92→81→133→156→76；WBC最低2.63/2.89</td><td>2</td><td>阿伐曲泊帕、罗普司亭；6/18瑞白短效升白针1支</td><td>C4节奏受影响；7/6 PLT 76、WBC 2.89，是否继续原方案待确认</td></tr>
+        <tr class="se-grade-3"><td>2026-06至07（C3后/C4前后）</td><td>SKB264</td><td>血小板明显波动：PLT 156→76→40→83→90→111→95→85</td><td>最高3级</td><td>阿伐曲泊帕、罗普司亭及连续血常规监测</td><td>C4、C5均减至3 mg/kg继续；后续低谷待监测</td></tr>
         <tr class="se-grade-2"><td>2026-06-18（短效升白针后）</td><td>瑞白（人粒细胞刺激因子）</td><td>发烧、身上疼、头晕、恶心，主观不适明显</td><td>2</td><td>对症观察；张主任说明q2w用药节奏下只能用短效升白针</td><td>后续升白支持需与医生确认耐受性和替代方案</td></tr>
         <tr class="se-grade-1"><td>2026-05-18起</td><td>SKB264</td><td>干咳（Trop-2黏膜效应 vs ILD待鉴别）</td><td>1</td><td>观察，监测血氧；ILD预警信号教育</td><td>持续中；C2后需监测是否加重</td></tr>
         <tr class="se-grade-1"><td>2026-05-08后</td><td>SKB264</td><td>口腔溃疡+口水增多（黏膜炎）</td><td>1</td><td>对症处理（漱口水等）</td><td>持续中；5/27口水多明显</td></tr>
@@ -417,7 +436,7 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;backgr
       <thead><tr><th>日期</th><th>PLT</th><th>WBC</th><th>Hb</th><th>网织红%</th><th>网织红绝对值</th><th>关键事件</th></tr></thead>
       <tbody>
         <tr><td>2026-05-08</td><td class="num lo">52</td><td class="num">4.06</td><td class="num">123</td><td>—</td><td>—</td><td>SKB264 C1输注（用药前基线）</td></tr>
-        <tr class="se-grade-4"><td>2026-05-11</td><td class="num hi">27</td><td class="num">—</td><td class="num">—</td><td>—</td><td>—</td><td>Grade 4，紧急住院，开始阿伐曲泊帕+罗普斯亭</td></tr>
+        <tr class="se-grade-4"><td>2026-05-11</td><td class="num hi">27</td><td class="num">—</td><td class="num">—</td><td>—</td><td>—</td><td>Grade 4，紧急住院，开始阿伐曲泊帕+罗普司亭</td></tr>
         <tr class="se-grade-4"><td>2026-05-12</td><td class="num hi">18 ⬇谷值</td><td class="num">3.66</td><td class="num">114</td><td class="num">1.5%</td><td class="num">51.3</td><td>凌晨00:54转院；铁过载（转铁蛋白饱和度99%↑↑）</td></tr>
         <tr class="se-grade-4"><td>2026-05-14</td><td class="num hi">31</td><td class="num">3.77</td><td class="num">112</td><td class="num">0.6%</td><td class="num">20.8</td><td>5/12输血小板后第2日；网织红↓（骨髓红系受抑）</td></tr>
         <tr class="se-grade-3"><td>2026-05-16</td><td class="num lo">41</td><td class="num">4.75</td><td class="num">110</td><td class="num">0.4%</td><td class="num">13.7</td><td>出院日（5/14再次输血小板）</td></tr>
@@ -593,7 +612,7 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;backgr
   </div>
 </div>
 
-<div style="text-align:center;font-size:11px;color:#b0bacf;padding:20px">数据来源：患者历次检验报告 · 最后更新：2026年7月9日</div>
+<div style="text-align:center;font-size:11px;color:#b0bacf;padding:20px">数据来源：本地治疗记录及历次检验报告 · 最后更新：2026年8月1日</div>
 
 <script>
 // ─── 原始数据 ─────────────────────────────────────────────
@@ -646,7 +665,7 @@ const bloodRaw=[
  {ts:1774540800000,PLT:72,WBC:3.57,Hb:124,ret:null,retAbs:null,note:'PLT下降'},
  {ts:1775059200000,PLT:71,WBC:3.45,Hb:118,ret:null,retAbs:null,note:'PLT持续偏低'},
  {ts:1775491200000,PLT:113,WBC:3.98,Hb:121,ret:null,retAbs:null,note:'PLT回升'},
- {ts:1776268800000,PLT:51,WBC:3.83,Hb:123,ret:null,retAbs:null,note:'PLT自发降至51，当日注射罗普斯亭'},
+ {ts:1776268800000,PLT:51,WBC:3.83,Hb:123,ret:null,retAbs:null,note:'PLT自发降至51，当日注射罗普司亭'},
  {ts:1776873600000,PLT:92,WBC:4.93,Hb:129,ret:null,retAbs:null,note:''},
  {ts:1777392000000,PLT:116,WBC:4.84,Hb:128,ret:null,retAbs:null,note:'✅ PLT恢复正常'},
  {ts:1778198400000,PLT:52,WBC:4.06,Hb:123,ret:null,retAbs:null,note:'用药前基线；SKB264 C1 5/8输注（4mg/kg）',event:'skb264'},
@@ -668,7 +687,13 @@ const bloodRaw=[
  {ts:1782086400000,PLT:81,WBC:null,Hb:null,ret:null,retAbs:null,note:'SKB264 C3 D+11；服阿伐曲泊帕后PLT仍降至80余，计划6/23罗普司亭'},
  {ts:1782432000000,PLT:133,WBC:3.56,Hb:106,ret:null,retAbs:null,note:'C3 D+15 / C4前评估；PLT回升至正常，WBC 3.56，ANC 2.29，淋巴绝对0.86↓；CA125 44.5，张主任和韩医生均不建议6/29继续芦康，建议先影像评估'},
  {ts:1782950400000,PLT:156,WBC:3.83,Hb:107,ret:null,retAbs:null,note:'C4前复查；PLT 156、WBC 3.83、Hb 107；ANC 2.56，淋巴绝对0.93↓'},
- {ts:1783296000000,PLT:76,WBC:2.89,Hb:108,ret:null,retAbs:null,note:'C4前/拟治疗日复查；已镜检；PLT 76↓，WBC 2.89↓；ANC 1.86，淋巴绝对0.75↓；C4是否执行待确认'},
+ {ts:1783296000000,PLT:76,WBC:2.89,Hb:108,ret:null,retAbs:null,note:'C4前/拟治疗日复查；已镜检；PLT 76↓，WBC 2.89↓；ANC 1.86，淋巴绝对0.75↓；当日未输液'},
+ {ts:1783555200000,PLT:40,WBC:3.59,Hb:111,ret:null,retAbs:null,note:'已镜检；PLT降至40（3级）；ANC 2.22正常，淋巴绝对1.02↓'},
+ {ts:1783900800000,PLT:83,WBC:4.44,Hb:114,ret:null,retAbs:null,note:'已镜检；PLT由40回升至83；ANC 2.98正常，淋巴绝对1.09↓'},
+ {ts:1784073600000,PLT:90,WBC:4.40,Hb:112,ret:null,retAbs:null,note:'SKB264 C4当日；减量至3 mg/kg执行；ANC 2.97正常，淋巴绝对0.91↓',event:'skb264'},
+ {ts:1784332800000,PLT:111,WBC:5.75,Hb:118,ret:null,retAbs:null,note:'C4 D+3；ANC 4.40正常，淋巴绝对1.00↓'},
+ {ts:1784764800000,PLT:95,WBC:4.97,Hb:117,ret:null,retAbs:null,note:'C4 D+8；ANC 3.49正常，淋巴绝对1.05↓'},
+ {ts:1785110400000,PLT:85,WBC:null,Hb:null,ret:null,retAbs:null,note:'C4 D+12；家属提供数值，正式报告待归档；韩医生意见为PLT恢复至100再化疗'},
 ];
 
 const organRaw=[
@@ -735,7 +760,7 @@ const tumorRaw=[
  {ts:1779379200000,CA125:29.7,HE4:87.9,CA199:20.2,CA724:1.5,note:'5/22门诊；CA125↓下降至29.7（接近正常）；趋势：42.2→36.3→29.7；HE4 87.9（正常范围）；CA199/CA724正常'},
  {ts:1780876800000,CA125:29.0,HE4:74.9,CA199:17.5,CA724:2.2,note:'C3用药前复查；CA125较5/22基本持平，HE4下降'},
  {ts:1782432000000,CA125:44.5,HE4:79.8,CA199:18.0,CA724:4.8,note:'C4前/拟输液前复查；CA125从29.0反弹至44.5；张主任和韩医生均不建议6/29继续芦康，建议先影像评估'},
- {ts:1783296000000,CA125:49.5,HE4:77.4,CA199:17.4,CA724:2.6,note:'C4前/拟治疗日复查；CA125较6/26继续上升（44.5→49.5）；C4是否执行待确认'},
+ {ts:1783296000000,CA125:49.5,HE4:77.4,CA199:17.4,CA724:2.6,note:'C4前复查；CA125较6/26继续上升（44.5→49.5）；C4后于7/15按3 mg/kg执行'},
 ];
 
 // Treatment events for chart annotations
@@ -746,7 +771,8 @@ const TRX_EVENTS=[
  {ts:1778198400000,label:'SKB264 C1',color:'#e67e22'},
  {ts:1779724800000,label:'SKB264 C2',color:'#27ae60'},
  {ts:1781136000000,label:'SKB264 C3',color:'#27ae60'},
- {ts:1782691200000,label:'C4暂停',color:'#c0392b'},
+ {ts:1784073600000,label:'SKB264 C4 3mg/kg',color:'#8e44ad'},
+ {ts:1785456000000,label:'SKB264 C5 3mg/kg',color:'#8e44ad'},
 ];
 
 // ─── Utilities ────────────────────────────────────────────
@@ -818,8 +844,9 @@ const eventPlugin={
    ctx.strokeStyle=ev.color;ctx.lineWidth=1.5;ctx.setLineDash([4,3]);
    ctx.beginPath();ctx.moveTo(px,y.top);ctx.lineTo(px,y.bottom);ctx.stroke();
    ctx.setLineDash([]);
-   ctx.fillStyle=ev.color;ctx.font='bold 9px sans-serif';ctx.textAlign='center';
-   ctx.fillText(ev.label,px,y.top-4);
+   ctx.fillStyle=ev.color;ctx.font='bold 8px sans-serif';ctx.textAlign='left';ctx.textBaseline='middle';
+   ctx.translate(px+3,y.top+8);ctx.rotate(-Math.PI/4);
+   ctx.fillText(ev.label,0,0);
    ctx.restore();
   });
  }
